@@ -1,16 +1,10 @@
 body{
-    background-color: black;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
 }
 .container{
     width: 480px;
-    margin: 120px auto;
-}
-
-h1{
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 400;
+    margin: 320px auto;
 }
 
 button{
