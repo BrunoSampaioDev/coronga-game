@@ -1,6 +1,6 @@
 # Desafio Nº 2 da formação Full-Stack Resilia
 
-Desafio em andamento (Versão Alfa do game!)
+Desafio em andamento (Versão Alfa do game!) <br />
 O desafio é Fazer um jogo com vários finais baseados em escolhas. O jogo precisa ter mais de um final e precisa seguir este fluxo padrão:
 
 - [ ] Mostrar o texto explicando o cenário atual
