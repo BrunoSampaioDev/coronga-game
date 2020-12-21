@@ -29,7 +29,8 @@ function gameOver(){
                     inicio de tudo! 
  **********************************************************/
 function faseUm(){
-    alert('A noite de 25 de Abril parecia tranquila até que tudo ficou agitado, Gritaria, explosões correria e pânico para todos os lados! Você está em casa e não sabe o que esta acontecendo...')
+    alert('INTRUÇÕES: Utilize OK para opção da direita e CANCEL para aopção da esquerda');
+    alert(`A noite de 25 de Abril parecia tranquila até que tudo ficou agitado, Gritaria, explosões correria e pânico para todos os lados! Você está em casa e não sabe o que esta acontecendo...`)
     var respostaUm = confirm('Ficar em casa | Sair de casa para averiguar');
     if(respostaUm){
         sairDeCasa();
@@ -43,7 +44,8 @@ function faseUm(){
                     fica de casa. 
  **********************************************************/
 function ficaEmCasa(){
-    var liga = confirm('Você decidiu ficar em casa. Liga para seu irmão | Continuar tranquilo em casa');
+    var liga = confirm(`Você decidiu ficar em casa:
+    Liga para seu irmão | Continuar em casa`);
     if(liga){
         ordasZumbis()
     }else{
@@ -56,7 +58,8 @@ function ficaEmCasa(){
                         irmao. 
  **********************************************************/
 function irmao(){
-    irmaoChegou = confirm('Seu irmão chegou na sua casa. e vocês precisam decidir: Continuar tranquilo em casa e esperar passar o tumulto | Sair de casa');
+    irmaoChegou = confirm(`Seu irmão chegou na sua casa. e vocês precisam decidir: 
+    Continuar em casa amedrontado! | Sair de casa`);
     if(irmaoChegou){
         sairDeCasa();
     }else{
@@ -69,7 +72,8 @@ function irmao(){
                     Sair de casa. 
  **********************************************************/
 function sairDeCasa(){
-    var respostaDois = confirm(`Você decidiu sair de casa Sair a pé | Sair de carro`);
+    var respostaDois = confirm(`Você decidiu sair de casa: 
+    Sair a pé | Sair de carro`);
     if(respostaDois){
         sairDeCarro();
     }else{
@@ -83,7 +87,8 @@ function sairDeCasa(){
                     Sair a pe. 
  **********************************************************/
 function sairApe(){
-    saiuApe = confirm(`Voce saiu a pe, continuar averiguando a pe | ir para a casa dos pais`);
+    saiuApe = confirm(`Voce saiu a pé: 
+    continuar averiguando a pé | ir para a casa dos pais`);
     if(saiuApe){
         casaDosPais();
     }else{
@@ -97,7 +102,8 @@ function sairApe(){
                     Sair de carro. 
  **********************************************************/
 function sairDeCarro(){
-    var foiDeCarro = confirm(`você decidiu sair de carro, Averiguar pela cidade | Ir para casa de seus pais onde sua filha foi passar o fim de semana`);
+    var foiDeCarro = confirm(`você decidiu sair de carro:
+    Averiguar pela cidade | Ir para casa de seus pais onde sua filha foi passar o fim de semana`);
     if(foiDeCarro){
         casaDosPais();
     }else{
@@ -111,7 +117,8 @@ function sairDeCarro(){
                         Foi a cidade 
  **********************************************************/
 function foiAcidade(){
-    var chegouNaCidade = confirm(`As ruas estão um verdadeiro caos, um virus letal está tranformando todos em zumbis! Dar meia volta e ir para a casa dos pais | Prosseguir em busca de suprimentos`)
+    var chegouNaCidade = confirm(`As ruas estão um verdadeiro caos, um virus letal está tranformando todos em zumbis! 
+    Voltar e ir para a casa dos pais | Prosseguir em busca de suprimentos`)
     if(chegouNaCidade){
         suprimentos();
     }else{
@@ -124,7 +131,8 @@ function foiAcidade(){
                         suprimentos 
  **********************************************************/
 function suprimentos(){
-    var obteveSuprimentos = confirm('Você conseguiu bons suprimentos. continuar buscando suprimentos | Ir para casa dos pais');
+    var obteveSuprimentos = confirm(`Você conseguiu bons suprimentos: 
+    continuar buscando suprimentos | Ir para casa dos pais`);
     if(obteveSuprimentos){
         casaDosPais();
     }else{
@@ -146,7 +154,8 @@ function ordasZumbis(){
                     casa dos pais 
  **********************************************************/
 function casaDosPais(){
-    var trep = confirm(`Ohh... não um carro capotado no meio caminho, parece ser um acidente grave, Ao lado do carro um mulher com uma criança pede ajuda desesperadamente Passar direto | Ajudar `);
+    var trep = confirm(`Ohh... não um carro capotado no meio caminho, parece ser um acidente grave, Ao lado do carro um mulher com uma criança pede ajuda desesperadamente: 
+    Passar direto | Ajudar `);
     if(trep){
         alert(`Era tudo uma armadilha você foi cercado por um grupo de pessoas que está caçando suprimentos, eles te atacaram e você morreu!`);
         gameOver();
@@ -161,7 +170,8 @@ function casaDosPais(){
                     Chegou a casa dos pais
  **********************************************************/
 function chegouAcasaDosPais(){
-    var chegouNosPais = confirm(`Chegando na casa dos seus pais não havia ninguém lá Sair e procurar pelos familiares | Procurar pistas na casa!`)
+    var chegouNosPais = confirm(`Chegando na casa dos seus pais não havia ninguém lá: 
+    Sair e procurar pelos familiares | Procurar pistas na casa!`)
     if(chegouNosPais){
         pistaDosPais();
     }else{
@@ -175,7 +185,8 @@ function chegouAcasaDosPais(){
                         Pista dos pais. 
  **********************************************************/
 function pistaDosPais(){
-    var montanhas = confirm(`você encontrou um bilhete: Fomos para o alto das montanhas ao norte! Ir para as montanhas encontrar a família | Buscar suprimentos`);
+    var montanhas = confirm(`você encontrou um bilhete: Fomos para o alto das montanhas ao norte! 
+    Encontrar a família | Buscar suprimentos`);
     if(montanhas){
         foiAcidade();
     }else{
